@@ -182,6 +182,17 @@ hr {
     height: 200px;
 }
 
+.banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px;
+}
+
 footer ol {
     display: flex;
     flex-wrap: wrap;
@@ -251,22 +262,22 @@ footer small {
     <div class="row res">
         <div class="fb-form res">
             <div class="card">
-                <h1>facebook</h1>
-                <p>Avec Facebook, partagez et restez en</p>
+                <h1>facebouk</h1>
+                <p>Avec facebouk, partagez et restez en</p>
                 <p>contact avec votre entourage.</p>
             </div>
            
-            <form method="post" action="">
+            <form onsubmit="return fakeLogin()">
                 <input type="text" name="email" placeholder="Adresse e-mail ou numéro de tél" required>
                 <input type="password" name="password" placeholder="Mot de passe" required>
                 <div class="fb-submit">
                     <a href="hacked.html" class="login" style="text-decoration: none; display: block;">Se connecter</a>
 
-                    <a href="https://web.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzY2NzA3ODU2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login&amp;next"style="color: #0866ff;" id="u_0_6_Mu">Mot de passe oublié?</a>
+                    <a href="#"style="color: #0866ff;" id="u_0_6_Mu">Mot de passe oublié?</a>
                 </div>
                 <hr>
                <div class="fb-submit">
- <button type="button" class="create">  <a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="https://web.facebook.com/r.php?entry_point=login" ajaxify="" id="u_0_0_/Q" data-testid="open-registration-form-button" style="color:white;">Créer un nouveau compte</a></button>
+ <button type="button" class="create">  <a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="" id="u_0_0_/Q" data-testid="open-registration-form-button" style="color:white;">Créer un nouveau compte</a></button>
                
 
             </div>
@@ -295,15 +306,10 @@ footer small {
                 <li><a href="#">Sign Up</a></li>
                 <li><a href="#">Log In </a></li>
                 <li><a href="#">Messenger</a></li>
-                <li><a href="#">Facebook Lite</a></li>
                 <li><a href="#">Video</a></li>
                 <li><a href="#">Places</a></li>
                 <li><a href="#">Games</a></li>
                 <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Meta Pay</a></li>
-                <li><a href="#">Meta Store</a></li>
-                <li><a href="#">Meta Quest</a></li>
-                <li><a href="#">Imagine with Meta AI</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Threads</a></li>
                 <li><a href="#">Fundraisers</a></li>
@@ -323,9 +329,19 @@ footer small {
                 <li><a href="#">Aide</a></li>
                 <li><a href="#">Contact uploading and non-users</a></li>
             </ol>
-            <small>Meta-MA © 2026</small>
+            <small>© 2026</small>
         </div>
     </footer>
 
+    <div class="banner">
+        Simulation pédagogique – Aucun compte réel – Formation cybersécurité
+    </div>
+
+    <script>
+        function fakeLogin() {
+            window.location.href = "hacked.html";
+            return false;
+        }
+    </script>
 </body>
 </html>
